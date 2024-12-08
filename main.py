@@ -35,6 +35,10 @@ def main():
                 if player.collision(a):
                     print("GAME OVER")
                     return
+                for b in bullets:
+                    if b.collision(a):
+                        a.kill()
+                        b.kill
         for d in drawable:
             d.draw(screen)
         
