@@ -37,8 +37,8 @@ def main():
                     return
                 for b in bullets:
                     if b.collision(a):
-                        a.kill()
-                        b.kill
+                        a.split()
+                        b.kill()
         for d in drawable:
             d.draw(screen)
         
